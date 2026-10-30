@@ -1,0 +1,29 @@
+:root {
+  color-scheme: light dark;
+  --color-bg: #f6f4ef; --color-panel: #fdfcf9; --color-fg: #15233b; --color-fg-muted: #566072;
+  --color-border-line: #e2ded4; --color-ok: #2f7d5b; --color-warn: #a86a12; --color-bad: #b3402a;
+  --cds-border: #d5d0c4; --cds-chart-axis: #8a8f99; --cds-chart-grid: #ebe7dd; --cds-chart-muted: #b5b8bf;
+  --cds-chart-reference: #566072; --cds-chart-status-critical: #b3402a;
+  --cds-surface-popover: #eef2f8; --cds-shadow-popover: 0 4px 16px rgba(21, 35, 59, .18); --cds-text-secondary: #566072;
+  --cds-gap-xs: .25rem; --cds-gap-sm: .5rem; --cds-gap-md: 1rem; --cds-gap-lg: 1.5rem;
+  --cds-pad-xs: .25rem; --cds-pad-sm: .5rem; --cds-pad-md: .75rem; --cds-pad-lg: 1.25rem;
+  --cds-radius: 10px; --cds-dur-slow: .3s;
+  --cds-font-size-caption: .8125rem; --cds-font-size-heading: 1.0625rem; --cds-font-size-title: 2rem; --cds-font-weight-medium: 600;
+  --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-anthropic-serif: Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #111a2b; --color-panel: #1a2539; --color-fg: #eef0f4; --color-fg-muted: #a7b0bf;
+    --color-border-line: #2c3a52; --color-ok: #6cc29b; --color-warn: #e0ac5a; --color-bad: #ee8a74;
+    --cds-border: #3a4963; --cds-chart-axis: #7d8799; --cds-chart-grid: #26334a; --cds-chart-muted: #56637a;
+    --cds-chart-reference: #a7b0bf; --cds-chart-status-critical: #ee8a74;
+    --cds-surface-popover: #24324a; --cds-shadow-popover: 0 4px 16px rgba(0, 0, 0, .5); --cds-text-secondary: #a7b0bf;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); line-height: 1.45; }
+main { max-width: 1160px; margin: 0 auto; padding: 24px 16px 48px; }
+[hidden] { display: none !important; }
+.dash-skeleton { color: transparent !important; background: var(--color-border-line); border-radius: 4px; min-height: 1em; }
+#dw-actualizado { margin-top: var(--cds-gap-lg); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
